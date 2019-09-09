@@ -15,51 +15,49 @@ body * {
     padding-bottom: 20px; 
     padding-top: 60px;
     text-align: center;
-
 }
-
     .hero  img {
         display: inline-block;
         width: 40px;
+        margin-bottom: 30px;
     }
-
     .hero  h1 {
         display: inline-block;
         width: 100%;
         font-size: 70px;
         text-transform: uppercase;
+        margin-bottom: 20px;
+        line-height: 80px;
     }
-
     .hero  p {
         display: inline-block;
         width: 100%;
         font-size: 25px;
         margin-bottom: 80px;
-        line-height: 
+        line-height: 30px;
         color: grey;
     }
-
-    .hero  clock {
+    .hero .clock {
         display: inline-block;
         width: 100%;
         margin-bottom: 80px;
     }
-
-    .hero  form {
+    .hero .form {
         display: inline-block;
         width: 100%;
         padding: 0 5%;
+        margin-bottom: 40px;
     }
-
-    .hero  mouse {
+    .hero .mouse {
         display: inline-block;
-        
     }
 
 .main-content {
     display: inline-block;
     width: 100%;
     background-color: #fff;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
     .main-content h3 {
@@ -78,9 +76,7 @@ body * {
         .main-content p > a {
             color: red;
             text-decoration: none;
-
         }
-
 
 footer {
     display: inline-block;
@@ -89,6 +85,46 @@ footer {
     padding-bottom: 60px; 
     padding-top: 20px;
 }
+    footer > .container:nth-child(1) {
+
+    }    
+        
+        footer .fa {
+        display: inline-block;
+        width: 40px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px;
+        padding: 10;
+        text-decoration: none;
+    }
+        footer .fa:hover  {
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+        }
+
+footer .info > div {
+    display: inline-block;
+}
+
+    footer .info > div:nth-child(2) {
+        padding: 0 15px;
+        margin: 0 15px;
+        border-left: 1 px solid;
+        border-right: 1 px solid;
+        margin: 0;
+        }
+
+    footer p {
+        display: inline-block;
+        width: 60%;
+        color: #fff;
+    }
+    footer a {
+        color: #fff;
+    }
 
 .small-container {
     display: inline-block;
@@ -101,25 +137,22 @@ footer {
     width: 1200px;
     margin: 0 calc( (100% - 1200px) / 2);
 }
-    .container > left {
+    .container > .left {
         display: inline-block;
         width: 50%;
         float: left;
-
-        background-color: blueviolet;
     }
-    .container > right {
+    .container > .right {
         display: inline-block;
-        width: 50%;
-        float: left;
-        margin-left: 10%;
-        background-color: greenyellow;
+        width: 40%;
+        float: right;
     }
 
 @media (max-width: 1300px) {
     .small-container {
         width: 900px;
         margin-left: calc( (100% - 900px) / 2);
+    }    
     .container {
         width: 900px;
         margin-left: calc( (100% - 900px) / 2);
@@ -130,7 +163,7 @@ footer {
     .small-container {
         width: 700px;
         margin-left: calc( (100% - 700px) / 2);
-
+    }
     .container {
         width: 700px;
         margin-left: calc( (100% - 700px) / 2);
@@ -140,21 +173,21 @@ footer {
 @media (max-width: 800px) {
     .small-container {
         width: 500px;
-        margin-left: calc( (100% - 500px) / 2);
+        margin-left: 0 calc( (100% - 500px) / 2);
     }
     .container {
         width: 500px;
-        margin-left: calc( (100% - 500px) / 2);
+        margin-left: 0 calc( (100% - 500px) / 2);
     }
 }
 
 @media (max-width: 600px) {
     .small-container {
         width: calc (100% - 40px);
-        margin-left: 0px;
+        margin-left: 20px;
     }
     .container {
         width: (100% - 40px);
-        margin-left: 0;
+        margin-left: 20;
     }
 }
