@@ -8,10 +8,17 @@ body * {
 }
 /*normalize.css*/
 
+html {
+    scroll-behavior: smooth;
+}
 .hero {
     display: inline-block;
     width: 100%;
+    min-height: 100vh;
     background-color:#03A9F5;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
     padding-bottom: 20px; 
     padding-top: 60px;
     text-align: center;
@@ -91,6 +98,7 @@ footer {
     footer > .container:nth-child(1) {
         border-bottom: 1px solid #fff;
         margin-bottom: 20px;
+        position: relative;
     }    
         
         footer .fa {
@@ -102,11 +110,22 @@ footer {
         margin: 10px;
         padding: 10px;
         text-decoration: none;
-    }
+        border-radius: 50%;
+        }
+
         footer .fa:hover {
             background-color: red;
             color: #fff;
-            border-radius: 50%;
+        }
+
+        footer .fa-angle-up {
+            background-color: red;
+            color: #fff;
+            top: -55px;
+            right: -22px;
+            box-shadow: 0 1px 2px #0008;
+
+            position: absolute;
         }
 
     footer img {
@@ -206,10 +225,13 @@ footer {
 @media (max-width: 600px) {
     .small-container {
         width: calc (100% - 40px);
-        margin-left: 20px;
+        margin-left: 0 20px;
     }
     .container {
         width: (100% - 40px);
-        margin-left: 20;
+        margin-left: 0 20;
+    }
+    footer > .fa-angle-up {
+        display: none;
     }
 }
